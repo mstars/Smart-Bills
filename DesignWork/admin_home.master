@@ -1,0 +1,259 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin_home.master.cs" Inherits="admin_home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta charset="utf-8"/>
+  <title>HBS | A complete billing solution</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="" name="keywords"/>
+  <meta content="" name="description"/>
+
+  <!-- Favicons -->
+  <link href="_img/_design/_icons/profile.jpg" rel="icon"/>
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet"/>
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="lib/animate/animate.min.css" rel="stylesheet"/>
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet"/>
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"/>
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet"/>
+
+	<style type="text/css">
+
+		
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header, #footer {
+			font-size: large;
+			padding: 0.3em;
+			background: #BCCE98;
+		}
+
+		#left {
+			background: #DAE9BC;
+		}
+		
+		#right {
+			background: #F7FDEB;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+	</style>
+	
+	<script type="text/javascript">
+	    /* =============================
+		This script generates sample text for the body content. 
+		You can remove this script and any reference to it. 
+		 ============================= */
+	    var bodyText = ["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+	    function generateText(sentenceCount) {
+	        for (var i = 0; i < sentenceCount; i++)
+	            document.write(bodyText[Math.floor(Math.random() * 7)] + " ")
+	    }
+	</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+	<div id="container">
+                        <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#" class="scrollto">HBS</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="admin_home.aspx">Home</a></li>
+ <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="view_request.aspx">View Request</a></li>
+                <li><a href="student_details_view.aspx">Student Details</a></li>
+                <li><a href="student_removal.aspx">Student Removal</a></li>
+
+              </ul>
+            </li>
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Billing<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="billing.aspx">Billing</a></li>
+                <li><a href="dometry_billing.aspx">Dometry Billing</a></li>                              
+                <li><a href="bill_details.aspx">Bill Details</a></li>
+                <li><a href="dometry_billing_details.aspx">Dometry Bill Details</a></li>
+
+
+              </ul>
+            </li>
+ <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fees<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="fees_addition.aspx">Fees Updation</a></li>
+                <li><a href="fees_details_view.aspx">Fees Details</a></li>
+                <li><a href="fees_reporting.aspx">Fees Reporting</a></li>
+
+              </ul>
+            </li>
+ <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dues<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="dues_details_addition.aspx">Dues Updation</a></li>
+                <li><a href="dues_details.aspx">Dues Billing</a></li>
+                <li><a href="dues_details.aspx">Dues Details</a></li>
+                  <li><a href="dues_billing.aspx">Dues Billing</a></li>
+
+              </ul>
+            </li>
+          <li><a href="grivance.aspx">Grivances</a></li>
+ <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="change_admin_password.aspx">Change Password</a></li>
+                <li><a href="index.aspx"><asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/index.aspx">Log out</asp:LinkButton></a></li>
+
+              </ul>
+            </li>
+        
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+          </header><!-- #header --> 
+
+         <div class="container" style="margin-top: 10px;border: 1px solid #bcce98; color:#bcce98; padding-top:5%; padding-left:5%; padding-right:5%; font-family:Century"; height:"100%"">
+                  
+                    <p>
+                        </p>
+             </div>
+
+
+
+	</div>
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder><br/>
+        	<div id="footer-wrapper">
+		<footer id="footer"><p></p></footer>
+	</div>
+    
+
+    </form>
+</body>
+</html>

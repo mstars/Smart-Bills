@@ -1,0 +1,188 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="index.master.cs" Inherits="index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <meta charset="utf-8"/>
+  <title>HBS | A complete billing solution</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="" name="keywords"/>
+  <meta content="" name="description"/>
+
+  <!-- Favicons -->
+  <link href="_img/_design/_icons/profile.jpg" rel="icon"/>
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet"/>
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="lib/animate/animate.min.css" rel="stylesheet"/>
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet"/>
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"/>
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet"/>
+
+
+      <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+ <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">HBS</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="about.aspx">About Us</a></li>
+          <li><a href="general_rules.aspx">General Rules</a></li>
+          <li><a href="fees_structre.aspx">Fees Structre</a></li>
+          <li><a href="student_registration.aspx">Register</a></li>
+          <li><a href="login.aspx">Login</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+
+
+
+
+
+
+
+
+
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="_img/intro-carousel/1a.jpg" alt=""/></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>ACADEMIC EXCELLENCE</h2>
+                <p>AE is the demonstrate ability to perform, achieve, and excel in scholastic activities.
+It has been identified with achieving high grades and superior performance.
+</p>
+ 
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="_img/intro-carousel/2a.jpg" alt=""/></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>CULTURE OF INNOVATION</h2>
+                <p>Environment of nurturing unorthodox thinking and its application. It's the attitude, behaviour
+and belief that innovation can come from anywhere in the organisation.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="_img/intro-carousel/3a.jpg" alt=""/></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>COMPETENCY BASED EDUCATION</h2>
+                <p>It is an approach to learning concrete skills than abstract learning. A course or a program
+is planned, delivered and evaluated based on defined skill or learning outcome known as
+a competency.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="_img/intro-carousel/4a.jpg" alt=""/></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>DEDICATION WITH INTEGRITY</h2>
+                <p>
+The quality of being committed to a task or a purpose and doing it in the right and reliable way
+over convenient even if no one is watching.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="_img/intro-carousel/5a.jpg" alt=""/></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>COMMITMENT TO NATURE AND SOCIETY</h2>
+                <p>Loyal and willingness to give ones time and energy for the protection of nature and society.
+Support any development activities after considering its sustainability.</p>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
